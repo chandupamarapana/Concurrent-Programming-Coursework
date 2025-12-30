@@ -7,10 +7,10 @@ public class Student {
     private String name;
     private Random random;
 
-    public Student(int studentId, String name, Random random){
+    public Student(int studentId, String name, int random){
         this.studentId = studentId;
         this.name = name;
-        this.random = random;
+        this.random = new Random();
     }
 
     public int getStudentId() {
