@@ -27,7 +27,7 @@ public class SubmissionStats {
     }
     // records a successful submission
     // called by worker threads when the submission succeeds
-    public void IncreaseSuccessfulSubmission(){
+    public void increaseSuccessfulSubmission(){
         successfulSubmissions.incrementAndGet();
 
     }

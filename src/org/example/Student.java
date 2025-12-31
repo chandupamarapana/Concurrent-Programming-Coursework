@@ -31,13 +31,13 @@ public class Student {
         return random;
     }
 
-    public boolean submitExam(int id, String name) throws InterruptedException{
+    public boolean submitExam(String name) throws InterruptedException{
         // to simulate a random processing time
         int simulateTime = random.nextInt(100);
         Thread.sleep(simulateTime); // Simulate the time that took for the submission
         int randomNumber = random.nextInt(100); //this represents real-world issues
         if (randomNumber < 5){ // To indicate that the simulator is falling
-            System.out.println("Student id "+ id + " 's submission FAILED");
+            System.out.println("Student name "+ name + " 's submission FAILED");
             return false;
         }
         else{
