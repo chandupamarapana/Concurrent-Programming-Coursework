@@ -7,7 +7,7 @@ public class Student {
     private String name;
     private Random random;
 
-    public Student(int studentId, String name, int random){
+    public Student(int studentId, String name){
         this.studentId = studentId;
         this.name = name;
         this.random = new Random();
