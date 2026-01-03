@@ -73,14 +73,6 @@ public class NewSubmissionSystem {
         System.out.println(" All " + numofStudents + "submissions processed by " + poolSize + " threads.");
         System.out.println();
     }
-    public int getNumOfStudents() {
-        return numofStudents;
-    }
-
-    public int getPoolSize() {
-        return poolSize;
-    }
-
     public SubmissionStats getStats() {
         return submissionStats;
     }

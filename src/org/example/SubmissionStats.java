@@ -90,9 +90,10 @@ public class SubmissionStats {
         System.out.println("Successful submissions   "+ getSuccussfulSubmissions());
         System.out.println("Failed submissions       "+ getFailedSubmissions());
         System.out.println("Total time (ms):         "+ getTotalTimeMillis());
-        System.out.println("Total time (seconds):    "+ String.format("%.2f", getTotalTimeMillis()/1000.0));
-        System.out.println("Success Rate:            "+ String.format("%.2f", getSuccessRate())+"%");
-        System.out.println("Throughput:              "+ String.format("%.2f",getThroughput())+"submissions/sec");
+        System.out.println("Total time (seconds):    "+ getTotalTimeMillis()/1000.0);
+        System.out.println("Total time (minutes):    "+ getTotalTimeMillis()/1000.0/60.0);
+        System.out.println("Success Rate:            "+ getSuccessRate());
+        System.out.println("Throughput:              "+ getThroughput()+"submissions/sec");
         System.out.println("_____________________________________");
     }
     public void printResults(String method, long totalTimeMs){

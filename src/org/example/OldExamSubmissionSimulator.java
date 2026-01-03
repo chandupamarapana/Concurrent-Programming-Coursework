@@ -1,8 +1,8 @@
 package org.example;
 
-public class ExamSubmissionSimulator {
+public class OldExamSubmissionSimulator {
     public static void main(String[] args) {
-        System.out.println("EASTMINSTER UNIVERSITY - EXAM SUBMISSION COMPARISON");
+        System.out.println("EASTMINSTER UNIVERSITY - OLD EXAM SUBMISSION SYSTEM");
 
         // first test with smaller number first to see the difference clearly
         int testStudents = 1000;
@@ -11,9 +11,6 @@ public class ExamSubmissionSimulator {
 
         System.out.println("Simulator Configuration");
         System.out.println("number of students: "+ testStudents);
-        System.out.println("Thread pool size "+ poolsize);
-        System.out.println();
-
 
         //test old system
         System.out.println(" The old system ");
@@ -34,8 +31,12 @@ public class ExamSubmissionSimulator {
         System.out.println();
 
         //calculate average time per student
-        double oldTotalTimeDouble = (double) oldTotalTime;
-        double averageWaitTime = oldTotalTimeDouble / testStudents;
+        double averageWaitTime = (double) oldTotalTime / testStudents;
+        System.out.println(" The problems of the old system ");
+        System.out.println(" The average wait time for a student "+ averageWaitTime+ " ms.");
+        System.out.println(" The last student waited: "+ oldTotalTime/1000.0 +" seconds");
+        System.out.println(" This would take a lot of time with 100,000 students");
+
 
 
     }
