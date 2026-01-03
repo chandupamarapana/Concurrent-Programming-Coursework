@@ -21,7 +21,7 @@ public class OldSubmissionSystem {
         System.out.println();
 
         for (int i = 0; i < numberOfStudents; i++) {
-            Student student = new Student(i + 1, "Student "+ (i + 1));
+            Student student = new Student(i + 1, "Student " + (i + 1));
             try {
                 // process this student
                 boolean success = student.submitExam(student.getName());
@@ -40,12 +40,13 @@ public class OldSubmissionSystem {
                 submissionStats.increaseFailingSubmissions();
                 System.out.println("Submission interrupted for " + student.getName());
             }
+        }
             submissionStats.setEndTime();
             System.out.println("Submissions completed ");
             System.out.println("all " + numberOfStudents + " submissions processed");
             System.out.println();
         }
-    }
+
         public int getNumberOfStudents(){
             return numberOfStudents;
         }
